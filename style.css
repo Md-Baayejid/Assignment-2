@@ -18,6 +18,9 @@
       color: rgba(137, 135, 161, 1);
 }
 
+.span-color{
+    color: rgba(233, 90, 8, 1);
+}
 
 
 
@@ -84,5 +87,35 @@ nav{
    
   }
   
+    
+}
+/* **BANNER STYLE** */
+
+#banner{
+    max-width: 1100px;
+    margin: auto;
+    margin-top: 120px;
+    display: flex;
+    align-items: flex-end;
+}
+
+#b-title{
+    font-size: 4rem;
+    font-weight: 700;
+    margin: 0px;
+}
+#b-disc{
+    margin-bottom: 0px;
+}
+
+@media screen and (max-width:576px) {
+
+    #banner{
+        flex-direction: column-reverse;
+        margin-top: 20px;
+    }
+    #b-title{
+        font-size: 2.5rem;
+    }
     
 }
