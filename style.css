@@ -14,11 +14,11 @@
     font-style: normal;
 }
 
-.less-dark{
-      color: rgba(137, 135, 161, 1);
+.less-dark {
+    color: rgba(137, 135, 161, 1);
 }
 
-.span-color{
+.span-color {
     color: rgba(233, 90, 8, 1);
 }
 
@@ -30,68 +30,76 @@
 
 
 .menu-list a {
-    
-     text-decoration: none;
-     color: black;
+
+    text-decoration: none;
+    color: black;
 
 }
-.menu-list{
+
+.menu-list {
     display: flex;
     list-style: none;
     gap: 50px;
 }
 
-#m-list1{
-     font-weight: 700;
-     color: rgba(37, 36, 50, 1);
+#m-list1 {
+    font-weight: 700;
+    color: rgba(37, 36, 50, 1);
 }
-#m-list2{
-     color: rgba(137, 135, 161, 1);
+
+#m-list2 {
+    color: rgba(137, 135, 161, 1);
 }
-#m-list3{
-     color: rgba(137, 135, 161, 1);
+
+#m-list3 {
+    color: rgba(137, 135, 161, 1);
 }
 
 
-nav{
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-     margin: auto;
+    margin: auto;
     max-width: 1100px;
-     margin-top: 20px;
+    margin-top: 20px;
 }
+
 /* **MEDIA RESPONSIVE** */
 
 @media screen and (max-width:576px) {
- 
-    nav{
-       width: auto;
+
+    nav {
+        width: auto;
     }
-    .menu-list{
-       
+
+    .menu-list {
+
         padding: 0px;
         gap: 0px;
     }
- 
-    #m-list1{
-    display: none;
 
-  }
-  #m-list2{
-    display: none;
- 
-  }
-  #m-list3{
-    display: none;
-   
-  }
-  
-    
+    #m-list1 {
+        display: none;
+
+    }
+
+    #m-list2 {
+        display: none;
+
+    }
+
+    #m-list3 {
+        display: none;
+
+    }
+
+
 }
+
 /* **BANNER STYLE** */
 
-#banner{
+#banner {
     max-width: 1100px;
     margin: auto;
     margin-top: 120px;
@@ -99,58 +107,63 @@ nav{
     align-items: flex-end;
 }
 
-#b-title{
+#b-title {
     font-size: 4rem;
     font-weight: 700;
     margin: 0px;
 }
-#b-disc{
+
+#b-disc {
     margin-bottom: 0px;
 }
 
 @media screen and (max-width:576px) {
 
-    #banner{
+    #banner {
         flex-direction: column-reverse;
         margin-top: 20px;
     }
-    #b-title{
+
+    #b-title {
         font-size: 2.5rem;
     }
-    
+
 }
 
 /* ****MAIN STYLE**** */
- 
+
 /* **PRODUCT DETAILS** */
-#product{
+#product {
     max-width: 1100px;
     margin: auto;
     margin-top: 70px;
 }
-#pro-title{
+
+#pro-title {
     font-size: 2rem;
     font-weight: 700;
     margin-bottom: 10px;
 }
-#pro-detail{
+
+#pro-detail {
     padding: 0px 120px;
 }
-#product-details{
+
+#product-details {
     text-align: center;
 }
 
 @media screen and (max-width:576px) {
-    #pro-detail{
-    padding: 0px 10px;
-}
-    
+    #pro-detail {
+        padding: 0px 10px;
+    }
+
 }
 
 
 
 /* **PRODUCTS LIST** */
-.product-list{
+.product-list {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 12px;
@@ -158,26 +171,29 @@ nav{
     margin-top: 40px;
 }
 
-.pro-card{
+.pro-card {
     max-width: 260px;
     text-align: center;
     display: flex;
     flex-direction: column;
 }
-.pro-img{
+
+.pro-img {
     width: 100%;
 }
-.lily{
+
+.lily {
     font-size: 22px;
     font-weight: 500;
     margin-top: 10px;
 }
-.cost{
+
+.cost {
     font-size: 22px;
     font-weight: 700;
     margin-top: 10px;
 }
-.first-btn{
+.first-btn {
     background-color: rgba(233, 90, 8, 1);
     color: white;
     border: 0px;
@@ -188,9 +204,73 @@ nav{
 
 @media screen and (max-width:576px) {
 
-     .product-list{
+    .product-list {
         grid-template-columns: repeat(2, 1fr);
-     }
-    
+    }
+
 }
 
+/* **PLANT LOVER SECTION** */
+
+#about-pl-lover {
+    max-width: 1100px;
+    margin: auto;
+    position: relative;
+}
+
+#plant-lover {
+    max-width: 1100px;
+    margin: auto;
+    margin-top: 200px;
+    display: flex;
+    max-height: 550px;
+
+}
+
+#pl-img {
+    height: 100%;
+}
+
+#about-pl {
+    padding-left: 60px;
+    padding-top: 10px;
+}
+
+#pl-title {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.pl-disc {
+    font-size: 1.1rem;
+}
+#badge{
+    height: 290px;
+    width: 290px;
+    position: absolute;
+    left: 340px;
+    bottom: 388px;
+    text-shadow: 10px black;
+}
+
+@media screen and (max-width:576px) {
+
+    #plant-lover{
+        flex-direction: column;
+        width: 100%;
+        margin-top: 60px;
+    }
+    #pl-img {
+        width: 100%;
+    }
+    #badge{
+        display: none;
+    }
+    #about-pl{
+        padding: 5px;
+    }
+    #pl-title{
+        font-size: 2rem;
+    }
+    
+}
