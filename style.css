@@ -1,3 +1,10 @@
+
+
+*{
+    margin: 0px;
+}
+
+
 .noto-serif {
     font-family: "Noto Serif", serif;
     font-optical-sizing: auto;
@@ -65,12 +72,12 @@ nav {
     margin-top: 20px;
 }
 
-/* **MEDIA RESPONSIVE** */
-
 @media screen and (max-width:576px) {
 
     nav {
         width: auto;
+        padding-left: 10px;
+        padding-right:10px ;
     }
 
     .menu-list {
@@ -122,15 +129,24 @@ nav {
     #banner {
         flex-direction: column-reverse;
         margin-top: 20px;
+       
     }
 
     #b-title {
         font-size: 2.5rem;
+        
     }
+    #banner-title{
+                 padding-left: 10px;
+         padding-right: 10px;
+    }
+  
 
 }
 
 /* ****MAIN STYLE**** */
+
+
 
 /* **PRODUCT DETAILS** */
 #product {
@@ -207,6 +223,8 @@ nav {
 
     .product-list {
         grid-template-columns: repeat(2, 1fr);
+        padding-left: 10px;
+        padding-right: 10px;
     }
 
 }
@@ -262,10 +280,16 @@ nav {
         flex-direction: column;
         width: 100%;
         margin-top: 60px;
+       
     }
 
     #pl-img {
         width: 100%;
+        
+    }
+    #img-pl{
+        padding-left: 10px;
+        padding-right: 10px;
     }
 
     #badge {
@@ -275,11 +299,14 @@ nav {
 
     #about-pl {
         padding: 5px;
+        padding-right: 6px;
+        padding-left: 10px;
     }
 
     #pl-title {
         font-size: 2rem;
     }
+   
 
 }
 
@@ -320,6 +347,10 @@ nav {
     #ld-details {
         margin-top: 390px;
     }
+    #latest-deals{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
 }
 
 
@@ -340,7 +371,7 @@ nav {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4)), url(./assets/deal-bloom.png);
     border-radius: 15px;
     place-items: center;
-    padding-top: 40px;
+    padding-top: 80px;
     color: white;
     font-size: 20px;
 }
@@ -349,7 +380,7 @@ nav {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4)), url(./assets/deal-ana.png);
     border-radius: 15px;
     place-items: center;
-    padding-top: 40px;
+    padding-top: 80px;
     color: white;
     font-size: 20px;
 
@@ -359,7 +390,7 @@ nav {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4)), url(./assets/deal-zabo.png);
     border-radius: 15px;
     place-items: center;
-    padding-top: 100px;
+    padding-top: 140px;
     color: white;
     font-size: 2.8em;
     font-weight: 700;
@@ -391,6 +422,8 @@ nav {
     #all-deals {
         display: flex;
         flex-direction: column;
+        margin-left: 10px;
+        margin-right: 10px;
     }
 
     #sp-3,
@@ -402,7 +435,7 @@ nav {
     }
     #deal-3, #deal-2, #deal-1{
         font-size: 22px;
-        padding-top: 40px;
+        padding-top: 90px;
         height: 160px;
         background-repeat: no-repeat;
         background-size: cover;
@@ -410,4 +443,67 @@ nav {
     }
 
 
+}
+
+
+/* **JOIN SECTION** */
+
+#join-section{
+    max-width: 100%;
+    margin-top: 120px;
+
+}
+#j-sec{
+    height: 540px;
+    background-image: url(./assets/news-letter-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+        display: grid;
+    justify-content: center;
+    align-content: center;
+}
+#j-title{
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 20px;
+}
+#form-sec{
+    width: 855px;
+}
+#in-email{
+    height: 37px;
+    width: 660px;
+    border: white 1px;
+}
+#second-btn{
+     border: rgb(240, 19, 19) 3px;
+     border-bottom: 2px white;
+     height: 38px;
+     width:180px;
+     color: white;
+    background-color: rgba(233, 90, 8, 1);
+}
+@media screen and (max-width:576px){
+    #join-section{
+        width: 100%;
+    }
+    #j-title{
+        font-size: 20px;
+    }
+    #form-sec{
+        width: 320px;
+    }
+    #in-email{
+        width: 200px ;
+    }
+    #second-btn{
+        width: 110px;
+    }
+    #j-sec{
+       height: 320px;
+       background-size: cover;
+
+    }
 }
