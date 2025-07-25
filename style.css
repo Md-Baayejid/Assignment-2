@@ -1,6 +1,4 @@
-
-
-*{
+* {
     margin: 0px;
 }
 
@@ -77,7 +75,7 @@ nav {
     nav {
         width: auto;
         padding-left: 10px;
-        padding-right:10px ;
+        padding-right: 10px;
     }
 
     .menu-list {
@@ -129,18 +127,19 @@ nav {
     #banner {
         flex-direction: column-reverse;
         margin-top: 20px;
-       
+
     }
 
     #b-title {
         font-size: 2.5rem;
-        
+
     }
-    #banner-title{
-                 padding-left: 10px;
-         padding-right: 10px;
+
+    #banner-title {
+        padding-left: 10px;
+        padding-right: 10px;
     }
-  
+
 
 }
 
@@ -271,8 +270,10 @@ nav {
     position: absolute;
     left: 340px;
     bottom: 388px;
-    text-shadow: 10px black;
-}
+    }
+
+
+#pl-badge {}
 
 @media screen and (max-width:576px) {
 
@@ -280,14 +281,15 @@ nav {
         flex-direction: column;
         width: 100%;
         margin-top: 60px;
-       
+
     }
 
     #pl-img {
         width: 100%;
-        
+
     }
-    #img-pl{
+
+    #img-pl {
         padding-left: 10px;
         padding-right: 10px;
     }
@@ -306,7 +308,7 @@ nav {
     #pl-title {
         font-size: 2rem;
     }
-   
+
 
 }
 
@@ -337,17 +339,19 @@ nav {
         padding: 0px 2px;
 
     }
+
     #ld-title {
-    font-size: 2rem;
-    font-weight: 700;
-    margin-bottom: 20px;
-    
-}
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 20px;
+
+    }
 
     #ld-details {
         margin-top: 390px;
     }
-    #latest-deals{
+
+    #latest-deals {
         margin-left: 10px;
         margin-right: 10px;
     }
@@ -433,7 +437,10 @@ nav {
         font-size: 16px;
 
     }
-    #deal-3, #deal-2, #deal-1{
+
+    #deal-3,
+    #deal-2,
+    #deal-1 {
         font-size: 22px;
         padding-top: 90px;
         height: 160px;
@@ -448,68 +455,79 @@ nav {
 
 /* **JOIN SECTION** */
 
-#join-section{
+#join-section {
     max-width: 100%;
     margin-top: 120px;
 
 }
-#j-sec{
+
+#j-sec {
     height: 540px;
     background-image: url(./assets/news-letter-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
-        display: grid;
+    display: grid;
     justify-content: center;
     align-content: center;
 }
-#j-title{
+
+#j-title {
     text-align: center;
     font-size: 3.5rem;
     font-weight: 700;
     color: white;
     margin-bottom: 20px;
 }
-#form-sec{
+
+#form-sec {
     width: 855px;
 }
-#in-email{
+
+#in-email {
     height: 37px;
     width: 660px;
     border: white 1px;
 }
-#second-btn{
-     border: rgb(240, 19, 19) 3px;
-     border-bottom: 2px white;
-     height: 38px;
-     width:180px;
-     color: white;
+
+#second-btn {
+    border: rgb(240, 19, 19) 3px;
+    border-bottom: 2px white;
+    height: 38px;
+    width: 180px;
+    color: white;
     background-color: rgba(233, 90, 8, 1);
 }
-@media screen and (max-width:576px){
-    #join-section{
+
+@media screen and (max-width:576px) {
+    #join-section {
         width: 100%;
     }
-    #j-title{
+
+    #j-title {
         font-size: 20px;
     }
-    #form-sec{
+
+    #form-sec {
         width: 320px;
     }
-    #in-email{
-        width: 200px ;
+
+    #in-email {
+        width: 200px;
     }
-    #second-btn{
+
+    #second-btn {
         width: 110px;
     }
-    #j-sec{
-       height: 320px;
-       background-size: cover;
+
+    #j-sec {
+        height: 320px;
+        background-size: cover;
 
     }
 }
 
 /* **FOOTER SECTION** */
-footer{
+footer {
     display: none;
     max-width: 1100px;
     height: 170px;
@@ -524,19 +542,22 @@ footer{
 footer li {
     list-style: none;
 }
-footer a{
+
+footer a {
     text-decoration: none;
 }
 
-#logo-disc{
+#logo-disc {
     width: 350px;
 }
-.footer-links{
+
+.footer-links {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-#footer-icon{
+
+#footer-icon {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -545,8 +566,8 @@ footer a{
 
 }
 
-@media screen and (max-width:576px)  {
-    footer{
+@media screen and (max-width:576px) {
+    footer {
         width: auto;
         height: auto;
         margin-bottom: 0px;
@@ -554,7 +575,8 @@ footer a{
         flex-direction: column;
         gap: 30PX;
     }
-    .footer-links{
+
+    .footer-links {
         gap: 30px;
     }
 }
